@@ -19,8 +19,6 @@ import 'package:nav_bottom_bar/nav_bottom_bar.dart';
 
 ```
 
-
-<img src="images/centerbutton.png" width="200"/>
 ## Big Button at start
 
 <img src="images/startbutton.png" width="200"/>
