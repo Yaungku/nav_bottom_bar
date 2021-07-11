@@ -1,7 +1,7 @@
 name: nav_bottom_bar
 description: A new flutter plugin project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/Yaungku/nav_button_bar.git
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

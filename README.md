@@ -1,15 +1,39 @@
-# nav_bottom_bar
+# Nav Bottom Bar
 
-A new flutter plugin project.
+Simple and clear Bottom Navigation Bar
 
-## Getting Started
+## Installation
+Include `nav_bottom_bar` in your `pubspec.yaml` file:
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  nav_bottom_bar: version
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Add this to use this library
+
+```dart
+import 'package:nav_bottom_bar/nav_bottom_bar.dart';
+
+```
+
+
+<img src="images/centerbutton.png" width="200"/>
+## Big Button at start
+
+<img src="images/startbutton.png" width="200"/>
+
+## Big Button at center
+
+<img src="images/centerbutton.png" width="200"/>
+
+## Big Button at end
+
+<img src="images/endbutton.png" width="200"/>
+
+## No Big Button
+
+<img src="images/nobutton.png" width="200"/>
 

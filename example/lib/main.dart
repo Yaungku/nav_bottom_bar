@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
                     body = "Big Button Pressed";
                   });
                 },
-                buttonPosition: ButtonPosition.start,
+                buttonPosition: ButtonPosition.end,
                 children: [
                   NavIcon(
                     icon: Icons.home,
