@@ -42,7 +42,7 @@ class NavIcon extends StatelessWidget {
           height: this.isActive == true ? 5.0 : 0.0,
           decoration: BoxDecoration(
             color:
-                this.isActive == true ? this.activecolor : Colors.transparent,
+                this.isActive == true ? this.activecolor! : Colors.transparent,
             borderRadius: BorderRadius.circular(5.0),
           ),
           duration: const Duration(milliseconds: 500),
