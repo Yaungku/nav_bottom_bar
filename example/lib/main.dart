@@ -46,6 +46,7 @@ class _MyAppState extends State<MyApp> {
                 children: [
                   NavIcon(
                     icon: Icons.home,
+                    activecolor: Colors.red,
                     onTap: () {
                       setState(
                         () {
@@ -57,6 +58,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                   NavIcon(
                     icon: Icons.history,
+                    activecolor: Colors.green,
                     onTap: () {
                       setState(
                         () {
