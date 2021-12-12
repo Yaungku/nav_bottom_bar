@@ -28,6 +28,8 @@ class NavBottomBar extends StatefulWidget {
   final double? bottomBarWidth;
   //Radius of Radius
   final double? bottomRadius;
+  //Decoration of Box
+  final BoxDecoration? decoration;
 
   NavBottomBar({
     Key? key,
@@ -42,6 +44,7 @@ class NavBottomBar extends StatefulWidget {
     this.showBigButton = true,
     this.btnOntap,
     this.bigIconColor,
+    this.decoration,
   }) : super(key: key);
 
   @override
@@ -57,6 +60,7 @@ class _NavBottomBarState extends State<NavBottomBar> {
     for (NavIcon el in widget.children) {
       int i = widget.children.indexOf(el);
       NavIcon _icon = NavIcon(
+          activecolor: el.activecolor,
           icon: el.icon,
           onTap: () {
             el.onTap!();
@@ -105,17 +109,18 @@ class _NavBottomBarState extends State<NavBottomBar> {
         child: Container(
           height: widget.bottomBarHeight,
           width: widget.bottomBarWidth ?? (_size.width * 0.9),
-          decoration: BoxDecoration(
-            borderRadius:
-                BorderRadius.all(Radius.circular(widget.bottomRadius!)),
-            color: widget.backgroundColor ?? Colors.black54,
-            boxShadow: <BoxShadow>[
-              BoxShadow(
-                  color: Colors.black54,
-                  offset: Offset(4, 4),
-                  blurRadius: 10.0),
-            ],
-          ),
+          decoration: widget.decoration ??
+              BoxDecoration(
+                borderRadius:
+                    BorderRadius.all(Radius.circular(widget.bottomRadius!)),
+                color: widget.backgroundColor ?? Colors.black54,
+                boxShadow: <BoxShadow>[
+                  BoxShadow(
+                      color: Colors.black54,
+                      offset: Offset(4, 4),
+                      blurRadius: 10.0),
+                ],
+              ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
